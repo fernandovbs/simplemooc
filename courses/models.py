@@ -30,3 +30,6 @@ class Course(models.Model):
     )
 
     objects = CourseManager()
+
+    def __str__(self):
+        return self.name
