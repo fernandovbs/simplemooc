@@ -15,7 +15,7 @@
 <div class="pure-g-r content-ribbon">
     <div class="pure-u-1-3">
         <div class="l-box">
-            <a href="detalhes/{{ course.id }}">
+            <a href="{{ course.get_absolute_url }}">
                 {% if course.image %}
                     <img src="{{ course.image.url }}" alt="{{ course.name }}" />
                 {% else %}
@@ -27,7 +27,7 @@
     <div class="pure-u-2-3">
         <div class="l-box">
             <h4 class="content-subhead">
-                <a href="detalhes/{{ course.id }}" title="Headline">{{ course.name }}</a>
+                <a href="{{ course.get_absolute_url }}" title="Headline">{{ course.name }}</a>
             </h4>
             {{ course.description|linebreaks }}
         </div>
