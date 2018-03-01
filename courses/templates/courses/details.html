@@ -40,6 +40,9 @@
 <div class="pure-g-r content-ribbon" id="contato">
         <div class="pure-u-1">
             <h3>Tire dúvidas sobre o curso</h3>
+            {% if is_valid %}
+                <p>Mensagem enviada com sucesso</p>
+            {% endif %}
             <form class="pure-form pure-form-aligned" method="POST">
                 {% csrf_token %}
                 <fieldset>
