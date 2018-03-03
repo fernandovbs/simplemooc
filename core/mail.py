@@ -1,4 +1,4 @@
-from django.template.loader impor render_to_string
+from django.template.loader import render_to_string
 from django.template.defaultfilters import striptags
 from django.core.mail import EmailMultiAlternatives
 from django.conf import settings
