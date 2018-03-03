@@ -20,6 +20,7 @@ def detalhes(request, slug):
         form = ContactCourse(request.POST)
         if form.is_valid():
             context['is_valid'] = True
+            form.send_mail(course.name)
             form = ContactCourse()
     else:
         form = ContactCourse()
